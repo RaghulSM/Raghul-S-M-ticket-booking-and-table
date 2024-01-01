@@ -1,0 +1,60 @@
+<table>
+  <tr>
+    <th>EMP Id</th>
+    <th>EMP Name</th>
+    <th>Designation</th>
+    <th>Location</th>
+    <th>Address</th>
+    <th class="salary" *ngIf="!hide" >Salary</th>
+  </tr>
+  <tr>
+    <td>001</td>
+    <td>Raghul</td>
+    <td>Associate</td>
+    <td>Chennai</td>
+    <td>600023,siruseri</td>
+    <td class="salary" *ngIf="!hide">70000</td>
+  </tr>
+  <tr>
+    <td>002</td>
+    <td>Ram</td>
+    <td>SSE</td>
+    <td>Chennai</td>
+    <td>600028,solinganallur</td>
+    <td class="salary" *ngIf="!hide">90000</td>
+  </tr>
+  <tr>
+    <td>003</td>
+    <td>Shyaam</td>
+    <td>TL</td>
+    <td>Chennai</td>
+    <td>600023,siruseri</td>
+    <td class="salary" *ngIf="!hide">150000</td>
+  </tr>
+  <tr>
+    <td>004</td>
+    <td>manoj</td>
+    <td>AM</td>
+    <td>Chennai</td>
+    <td>600028,solinganallur</td>
+    <td class="salary" *ngIf="!hide">170000</td>
+  </tr>
+  <tr>
+    <td>005</td>
+    <td>hussain</td>
+    <td>SSE</td>
+    <td>Hydrabad</td>
+    <td>802223,Hydrabad</td>
+    <td class="salary" *ngIf="!hide">80000</td>
+  </tr>
+  <tr>
+    <td>006</td>
+    <td>cristo</td>
+    <td>Associate</td>
+    <td>Chennai</td>
+    <td>600023,siruseri</td>
+    <td class="salary" *ngIf="!hide">70000</td>
+  </tr>
+  <button (click)="hideSalary()"> <span [hidden]="hide">Hide</span> <span [hidden]="!hide">Show</span> </button>
+
+</table>

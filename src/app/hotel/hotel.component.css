@@ -1,0 +1,30 @@
+.hotelForm{
+  border: 0px solid;
+  box-shadow: 5px 5px 12px 5px;
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.hotelForm div{
+  margin-top: 20px;
+
+}
+.hotelForm select{
+  margin-top: 5px;
+  width: 300px;
+}
+.hotelForm label{
+  font-weight: bold;
+}
+.hotelForm #heading{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  font-size: larger;
+}
+
+button{
+  background-color: rgb(13, 209, 13);
+  width: 185px;
+}

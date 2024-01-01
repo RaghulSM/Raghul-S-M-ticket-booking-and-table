@@ -1,0 +1,55 @@
+<form class="hotelForm">
+  <div>
+    <h4 id="heading">Hotel Reservation Form</h4>
+  </div>
+  <div>
+    <label for="">Room/Suite Type</label><br>
+    <select name="room" id="" [(ngModel)]="room" >
+    <option value="0" selected disabled >Select Room Type</option>
+    <option value="1200">Single</option>
+    <option value="1800">Double</option>
+  </select>
+  </div>
+  <div>
+    <label for="">Number of room/suit</label><br>
+    <select name="numbers" id="" [(ngModel)]="numbers">
+    <option value="0" selected disabled >0</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
+  </div>
+  <div>
+    <label for="">Number of persons</label><br>
+    <select name="" id="" >
+      <option value="0" selected disabled >0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+  </div>
+  <div>
+    <label for="">Number of children</label><br>
+    <select name="" id="" >
+      <option value="0" selected disabled >0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </div>
+  <div>
+    <label for="">Restraunt facilities</label><br>
+    <select name="facility" id="" [(ngModel)]="facility">
+      <option value="0" selected disabled >Choose Facilities</option>
+      <option value="0">Normal</option>
+      <option value="300">AC</option>
+      <option value="500">AC with hot water</option>
+    </select>
+  </div>
+  <div>
+    <label for="">Total Cost(INR):</label>
+    <button [disabled]="room==''||numbers==''||facility==''" (click)="redirect()" >Pay:{{room*numbers}}</button>
+  </div>
+</form>
+
